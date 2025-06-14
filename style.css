@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; }
+.navbar{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141212;
+  padding: 10px 20px;
+} 
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 600px;
+}
+.search-bar input {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 400px;  }
+ul{
+    list-style-type:none;
+    background-color:black;
+    color:white;  }
+ul li{
+    display:inline-block;
+    padding:18px;
+}
+ul li:hover{
+    background-color:gray;
+    color:white;
+    padding: 10px;
+    border:2px solid rgb(32, 29, 29);
+}.hero {
+    position: relative;
+    height: 427px;
+    background-image: url(web.jpg); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    background-attachment: fixed; /* To make the background image stay fixed while scrolling */
+    margin-top: 6px;
+}.hero::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+    z-index: 1;
+}.content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}.content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}.content p {
+    font-size: 20px;
+    line-height: 1.6;
+}footer {     /* Footer */
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+} .list a{
+    color: bisque;
+    text-decoration: none;
+}
